@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--Slick-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Just Travelous</title>
+  </head>
+  <body class="allDestinationsBody">
+
+    <header>
+      <nav class="nav">
+        <div class="container wrapper">
+          <div class="logo">
+            <a href="index.html">Just Travelous</a>
+          </div>
+          <ul class="nav-list">
+            <div class="top">
+              <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a class="desktop-item">Packages</a>
+              <input type="checkbox" id="show-drop-menu-1">
+              <label for="show-drop-menu-1" class="mobile-item">Packages<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-1">
+                <li><a href="#">Search</a></li>
+                <li><a href="allTourPackages.html">All Tour Packages</a></li>
+                <li><a href="allDestinations.html">All Destinations</a></li>
+              </ul>
+            </li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li>
+              <a class="desktop-item">News</a>
+              <input type="checkbox" id="show-drop-menu-2">
+              <label for="show-drop-menu-2" class="mobile-item">News<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-2">
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Recent Activity</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="desktop-item">Contact</a>
+              <input type="checkbox" id="show-drop-menu-3">
+              <label for="show-drop-menu-3" class="mobile-item">Contacts<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-3">
+                <li><a href="contactUs.html">Contact 1</a></li>
+              </ul>
+            </li>
+            <li class="book-btn"><a href="#">Book Now</a></li>
+          </ul>
+          <label for="" class="btn open-btn"><i class="fa fa-bars"></i></label>
+        </div>
+      </nav>
+
+      <section class="section hero">
+        <video class="video-slide active" src="images/destinationpage3.mp4" autoplay muted loop></video>
+
+        <div class="hero-content">
+          <h1>Our Destinations</h1>
+          <h2>&darr;</h2>
+        </div>
+      </section>
+    </header>
+
+    <section class="section allDestinations">
+      <div class="allDestinations_layout container">
+        <div class="all_destination_item">
+          <div class="big_img">
+            <img src="images/asia.jpg" alt="">
+            <div class="image_overlay">
+              <h2>Asia</h2>
+              <span>4 packages</span>
+            </div>
+          </div>
+          <div class="side_slider_container">
+            <div class="side_slider">
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/borabora.jpg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Bora Bora</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/maldives.jpeg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Maldives</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/kohsamui.jpg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Koh Samui</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/bali.jpg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Bali</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+            </div>
+            <div class="side_slider_prev_btn">
+              <span><i class="fas fa-arrow-circle-left"></i></span>
+            </div>
+            <div class="side_slider_next_btn">
+              <span><i class="fas fa-arrow-circle-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="all_destination_item">
+          <div class="big_img">
+            <img src="images/europe.jpg" alt="">
+            <div class="image_overlay">
+              <h2>Europe</h2>
+              <span>4 packages</span>
+            </div>
+          </div>
+          <div class="side_slider_container">
+            <div class="side_slider">
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/discover7.jpeg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Bali</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/discover6.jpeg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Bali</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/discover5.jpeg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Bali</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/discover4.jpg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Bali</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+            </div>
+            <div class="side_slider_prev_btn">
+              <span><i class="fas fa-arrow-circle-left"></i></span>
+            </div>
+            <div class="side_slider_next_btn">
+              <span><i class="fas fa-arrow-circle-right"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="all_destination_item">
+          <div class="big_img">
+            <img src="images/bookwithusBg.jpeg" alt="">
+            <div class="image_overlay">
+              <h2>Asia</h2>
+              <span>4 packages</span>
+            </div>
+          </div>
+          <div class="side_slider_container">
+            <div class="side_slider">
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/discover5.jpeg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Bali</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/discover6.jpeg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Bali</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/discover7.jpeg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Bali</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+              <div class="side_item">
+                <div class="side_item_img">
+                  <a href="aboutDestination.html"><img src="images/discover1.jpg" alt=""></a>
+                </div>
+                <div class="side_item_desc">
+                  <h2>Bali</h2>
+                  <span>2 Packages</span>
+                </div>
+              </div>
+            </div>
+            <div class="side_slider_prev_btn">
+              <span><i class="fas fa-arrow-circle-left"></i></span>
+            </div>
+            <div class="side_slider_next_btn">
+              <span><i class="fas fa-arrow-circle-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section footer">
+      <div class="footer_layout container">
+        <div class="footer_content">
+          <div class="footer_data">
+            <h3 class="footer_title">Travel</h3>
+            <p class="footer_desc">Travel you choose the <br>destination, we offer you the <br>experience.</p>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">About</h3>
+            <ul>
+              <li class="footer_link"><a href="#">About Us</a></li>
+              <li class="footer_link"><a href="#">Features</a></li>
+              <li class="footer_link"><a href="#">News & Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">Company</h3>
+            <ul>
+              <li class="footer_link"><a href="#">Team</a></li>
+              <li class="footer_link"><a href="#">Plan & Pricing</a></li>
+              <li class="footer_link"><a href="#">Become a member</a></li>
+            </ul>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">Support</h3>
+            <ul>
+              <li class="footer_link"><a href="#">FAQs</a></li>
+              <li class="footer_link"><a href="#">Support Center</a></li>
+              <li class="footer_link"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom JS -->
+    <script src="index.js"></script>
+  </body>
+</html>

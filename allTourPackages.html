@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--Slick-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Just Travelous</title>
+  </head>
+  <body class="allTourPackagesBody">
+
+    <header>
+      <nav class="nav">
+        <div class="container wrapper">
+          <div class="logo">
+            <a href="index.html">Just Travelous</a>
+          </div>
+          <ul class="nav-list">
+            <div class="top">
+              <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a class="desktop-item">Packages</a>
+              <input type="checkbox" id="show-drop-menu-1">
+              <label for="show-drop-menu-1" class="mobile-item">Packages<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-1">
+                <li><a href="#">Search</a></li>
+                <li><a href="allTourPackages.html">All Tour Packages</a></li>
+                <li><a href="allDestinations.html">All Destinations</a></li>
+              </ul>
+            </li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li>
+              <a class="desktop-item">News</a>
+              <input type="checkbox" id="show-drop-menu-2">
+              <label for="show-drop-menu-2" class="mobile-item">News<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-2">
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Recent Activity</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="desktop-item">Contact</a>
+              <input type="checkbox" id="show-drop-menu-3">
+              <label for="show-drop-menu-3" class="mobile-item">Contacts<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-3">
+                <li><a href="contactUs.html">Contact 1</a></li>
+              </ul>
+            </li>
+            <li class="book-btn"><a href="#">Book Now</a></li>
+          </ul>
+          <label for="" class="btn open-btn"><i class="fa fa-bars"></i></label>
+        </div>
+      </nav>
+
+      <section class="section hero">
+        <video class="video-slide active" src="images/allTourPackagesHero.mp4" autoplay muted loop></video>
+
+        <div class="hero-content">
+          <h2>Our Packages</h2>
+          <h1>Search your Holiday</h1>
+        </div>
+      </section>
+    </header>
+
+    <section>
+      <div class="section package_filter">
+        <div class="package_filter_layout container">
+          <div class="filter_item">
+            <h3>Select Your Destination:</h3>
+            <select class="select_destination">
+              <option value="maldives">Maldives</option>
+              <option value="bora bora">Bora Bora</option>
+              <option value="palawan">Palawan</option>
+              <option value="seychelles">Seychelles</option>
+            </select>
+          </div>
+          <div class="filter_item">
+            <h3>Select Your Date:</h3>
+            <input type="date">
+          </div>
+          <div class="filter_item">
+            <div class="range-tile">
+              <h3>Max Price:</h3>
+              <span id="range-price-text">0</span>
+            </div>
+            <input type="range" class="range_price_val" min="0" max="10000" value="5000">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="more_filter">
+      <div class="more_filter_layout">
+        <div class="more_filter_title">
+          <span><i class="fas fa-filter"></i>More Filter</span>
+        </div>
+        <div class="more_filter_dropdown">
+          <div class="filter_row">
+            <div class="filter_column">
+              <h3>Typologies</h3>
+              <li>
+                <input type="checkbox" id="filter_relax" value="">
+                <label for="filter_relax">Relax</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter_culture" value="">
+                <label for="filter_relax">Culture</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter_sports" value="">
+                <label for="filter_relax">Sports</label>
+              </li>
+            </div>
+            <div class="filter_column">
+              <h3>Durations:</h3>
+              <li>
+                <input type="checkbox" id="filter_upto3Days" value="">
+                <label for="filter_upto3Days">1 - 3 Days</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter_upto6Days" value="">
+                <label for="filter_upto6Days">3 - 6 Day</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter_upto9Days" value="">
+                <label for="filter_upto9Days">6 - 9 Days</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter_upto12Days" value="">
+                <label for="filter_upto12Days">9 - 12 Days</label>
+              </li>
+            </div>
+            <div class="filter_column">
+              <h3>Difficulty</h3>
+              <li>
+                <input type="checkbox" id="filter_high" value="">
+                <label for="filter_high">High</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter_low" value="">
+                <label for="filter_low">Low</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter_medium" value="">
+                <label for="filter_medium">Medium</label>
+              </li>
+            </div>
+            <div class="filter_column">
+              <h3>Min. Age</h3>
+              <li>
+                <input type="checkbox" id="filter_10years" value="">
+                <label for="filter_10years">10 Years</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter_18years" value="">
+                <label for="filter_18years">18 Years</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter_3years" value="">
+                <label for="filter_3years">3 Years</label>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section packages container">
+      <div>
+        <h2 class="title">Choose Your Package</h2>
+      </div>
+      <div class="packages_layout">
+        <div class="package_card">
+          <img src="images/place1.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place2.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place3.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place4.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place5.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place1.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="package_card">
+          <img src="images/place1.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place2.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place3.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place4.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place5.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place1.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="package_card">
+          <img src="images/place1.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place2.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place3.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place4.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place5.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place1.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section footer">
+      <div class="footer_layout container">
+        <div class="footer_content">
+          <div class="footer_data">
+            <h3 class="footer_title">Travel</h3>
+            <p class="footer_desc">Travel you choose the <br>destination, we offer you the <br>experience.</p>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">About</h3>
+            <ul>
+              <li class="footer_link"><a href="#">About Us</a></li>
+              <li class="footer_link"><a href="#">Features</a></li>
+              <li class="footer_link"><a href="#">News & Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">Company</h3>
+            <ul>
+              <li class="footer_link"><a href="#">Team</a></li>
+              <li class="footer_link"><a href="#">Plan & Pricing</a></li>
+              <li class="footer_link"><a href="#">Become a member</a></li>
+            </ul>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">Support</h3>
+            <ul>
+              <li class="footer_link"><a href="#">FAQs</a></li>
+              <li class="footer_link"><a href="#">Support Center</a></li>
+              <li class="footer_link"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom JS -->
+    <script src="index.js"></script>
+  </body>
+</html>

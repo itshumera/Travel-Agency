@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--Slick-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Just Travelous</title>
+  </head>
+  <body>
+
+    <header>
+      <nav class="nav">
+        <div class="container wrapper">
+          <div class="logo">
+            <a href="index.html">Just Travelous</a>
+          </div>
+          <ul class="nav-list">
+            <div class="top">
+              <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a class="desktop-item">Packages</a>
+              <input type="checkbox" id="show-drop-menu-1">
+              <label for="show-drop-menu-1" class="mobile-item">Packages<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-1">
+                <li><a href="#">Search</a></li>
+                <li><a href="allTourPackages.html">All Tour Packages</a></li>
+                <li><a href="allDestinations.html">All Destinations</a></li>
+              </ul>
+            </li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li>
+              <a class="desktop-item">News</a>
+              <input type="checkbox" id="show-drop-menu-2">
+              <label for="show-drop-menu-2" class="mobile-item">News<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-2">
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Recent Activity</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="desktop-item">Contact</a>
+              <input type="checkbox" id="show-drop-menu-3">
+              <label for="show-drop-menu-3" class="mobile-item">Contacts<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-3">
+                <li><a href="contactUs.html">Contact 1</a></li>
+              </ul>
+            </li>
+            <li class="book-btn"><a href="#">Book Now</a></li>
+          </ul>
+          <label for="" class="btn open-btn"><i class="fa fa-bars"></i></label>
+        </div>
+      </nav>
+
+      <section class="section hero">
+        <video class="video-slide active" src="images/0.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/5.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/3.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="images/4.mp4" autoplay muted loop></video>
+
+        <div class="hero-content">
+          <h2>Discover your place</h2>
+          <h1>Explore The <br>Best Beautiful Beaches <br>And Islands</h1>
+        </div>
+
+        <div class="slider-navigation">
+          <div class="nav-btn active"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+        </div>
+      </section>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about">
+      <div class="about_layout container">
+        <div class="about_content">
+          <h2 class="title">More Information <br> About The Best Beaches</h2>
+          <p class="about_description">You can find the most beautiful and pleasant places at the best
+              prices with special discounts, you choose the place we will guide you all the way to wait, get your
+              place now.
+          </p>
+          <a href="#" class="button">Reserve a place</a>
+        </div>
+        <div class="about_img">
+          <div class="img_container">
+            <img class="about_img1" src="images/about1.jpg" alt="about_img">
+          </div>
+          <div class="img_container">
+            <img class="about_img2" src="images/about2.jpg" alt="about_img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Destinations-->
+    <section class="section destinations">
+      <div class="destinations_layout container">
+        <h2 class="title">Discover The Most Attractive Destinations</h2>
+        <div class="destinations_slider_container">
+          <div class="destinations_slider center">
+            <div class="destinations_cell">
+              <div class="img_container">
+                <a href="aboutDestination.html"><img src="images/discover1.jpg"></a>
+              </div>
+              <div class="destination_desc">
+                <div class="main_desc">
+                  <h2>Bali</h2>
+                  <span></span>
+                </div>
+                <span>2 Packages</span>
+              </div>
+            </div>
+
+            <div class="destinations_cell">
+              <div class="img_container">
+                <a href="aboutDestination.html"><img src="images/discover2.jpg"></a>
+              </div>
+              <div class="destination_desc">
+                <h2>Bali</h2>
+                <span>2 Packages</span>
+              </div>
+            </div>
+
+            <div class="destinations_cell">
+              <div class="img_container">
+                <a href="aboutDestination.html"><img src="images/discover3.jpg"></a>
+              </div>
+              <div class="destination_desc">
+                <h2>Bali</h2>
+                <span>2 Packages</span>
+              </div>
+            </div>
+
+            <div class="destinations_cell">
+              <div class="img_container">
+                <a href="aboutDestination.html"><img src="images/discover4.jpg"></a>
+              </div>
+              <div class="destination_desc">
+                <h2>Bali</h2>
+                <span>2 Packages</span>
+              </div>
+            </div>
+
+            <div class="destinations_cell">
+              <div class="img_container">
+                <a href="aboutDestination.html"><img src="images/discover5.jpeg"></a>
+              </div>
+              <div class="destination_desc">
+                <h2>Bali</h2>
+                <span>2 Packages</span>
+              </div>
+            </div>
+
+            <div class="destinations_cell">
+              <div class="img_container">
+                <a href="aboutDestination.html"><img src="images/discover6.jpeg"></a>
+              </div>
+              <div class="destination_desc">
+                <h2>Bali</h2>
+                <span>2 Packages</span>
+              </div>
+            </div>
+
+            <div class="destinations_cell">
+              <div class="img_container">
+                <a href="aboutDestination.html"><img src="images/discover7.jpeg"></a>
+              </div>
+              <div class="destination_desc">
+                <h2>Bali</h2>
+                <span>2 Packages</span>
+              </div>
+            </div>
+          </div>
+          <div class="prev_btn" id="main_slider_prev">
+            <span><i class="fas fa-arrow-circle-left"></i></span>
+          </div>
+          <div class="next_btn" id="main_slider_next">
+            <span><i class="fas fa-arrow-circle-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section class="section activity">
+      <div class="adv_activity">
+        <div class="top">
+          <h2 class="title">Adventure Activities</h2>
+          <p class="desc">We live in a wonderful world that is full of beauty, charm and adventure. There is no end to the adventures we can have if only we seek them with our eyes open.</p>
+        </div>
+      </div>
+      <div class="activity_layout">
+        <div class="activity_items_container">
+          <div class="activity_items">
+            <img src="images/activity1.jpeg">
+            <div class="activity_desc">
+              <h2>Scuba Diving</h2>
+            </div>
+          </div>
+          <div class="activity_items">
+            <img src="images/activity2.jpeg">
+            <div class="activity_desc">
+              <h2>Jet Skiing</h2>
+            </div>
+          </div>
+          <div class="activity_items">
+            <img src="images/activity3.jpeg">
+            <div class="activity_desc">
+              <h2>Kayaking</h2>
+            </div>
+          </div>
+          <div class="activity_items">
+            <img src="images/activity4.jpeg">
+            <div class="activity_desc">
+              <h2>Kitesurfing</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+
+    <section class="section packages container">
+      <div>
+        <h2 class="title">Choose Your Package</h2>
+      </div>
+      <div class="packages_layout">
+        <div class="package_card">
+          <img src="images/place1.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place2.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place3.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place4.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place5.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place1.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- why book with us -->
+    <section class="section bookWithUs">
+      <div class="bookWithUs_layout">
+        <div class="bookWithUs_image">
+          <div class="image_overlay">
+            <h2>Why Book With US</h2>
+          </div>
+        </div>
+        <div class="bookWithUs_content">
+          <div class="content_layout">
+            <div class="bookWithUs_item">
+              <h2>TripAdvisor Multiple Award winning company</h2>
+              <span>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel website.</span>
+            </div>
+            <div class="bookWithUs_item">
+              <h2>100% Customizable</h2>
+              <span>Tell us about your trip requirement. We'll work together to customize your trip to meet your exact requirement so that you have a memorable trip.</span>
+            </div>
+            <div class="bookWithUs_item">
+              <h2>Local Experts. Middle-man Free Pricing</h2>
+              <span>We're a local travel agency. When you book with us, you get best possible price, which is middle-man free.</span>
+            </div>
+            <div class="bookWithUs_item">
+              <h2>No Hidden Charges</h2>
+              <span>We don't add hidden extras cost. All trips include travel permit, lodging and fooding. There are no surprises with hidden costs.</span>
+            </div>
+            <div class="bookWithUs_item">
+              <h2>TripAdvisor Multiple Award winning company</h2>
+              <span>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel website.</span>
+            </div>
+            <div class="bookWithUs_item">
+              <h2>TripAdvisor Multiple Award winning company</h2>
+              <span>We've received Certificate of Excellence award from TripAdvisor, the world's largest travel website.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- experience -->
+    <section class="section experience">
+      <h2 class="title">With Our Experience <br>We Will Serve You</h2>
+      <div class="experience_content">
+        <div class="experience_item">
+          <h2>20</h2>
+          <span>Year Experience</span>
+        </div>
+        <div class="experience_item">
+          <h2>75</h2>
+          <span>Complete Tours</span>
+        </div>
+        <div class="experience_item">
+          <h2>650+</h2>
+          <span>Tourist Destinations</span>
+        </div>
+      </div>
+      <div class="experience_image">
+        <img class="exp1" src="images/experience1.jpg" alt="">
+        <img class="exp2" src="images/experience2.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- newsletter -->
+    <section class="section newsletter">
+      <div class="newsletter_layout container">
+        <h2 class="title">Subscribe Our<br>Newsletter</h2>
+        <span>Subscribe to our newsletter and get a special 30% discount.</span>
+        <form class="subscribe_form">
+          <input type="email" id="email" name="email" placeholder="Enter email">
+          <button type="submit" id="subscribe_btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="section footer">
+      <div class="footer_layout container">
+        <div class="footer_content">
+          <div class="footer_data">
+            <h3 class="footer_title">Travel</h3>
+            <p class="footer_desc">Travel you choose the <br>destination, we offer you the <br>experience.</p>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">About</h3>
+            <ul>
+              <li class="footer_link"><a href="#">About Us</a></li>
+              <li class="footer_link"><a href="#">Features</a></li>
+              <li class="footer_link"><a href="#">News & Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">Company</h3>
+            <ul>
+              <li class="footer_link"><a href="#">Team</a></li>
+              <li class="footer_link"><a href="#">Plan & Pricing</a></li>
+              <li class="footer_link"><a href="#">Become a member</a></li>
+            </ul>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">Support</h3>
+            <ul>
+              <li class="footer_link"><a href="#">FAQs</a></li>
+              <li class="footer_link"><a href="#">Support Center</a></li>
+              <li class="footer_link"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom JS -->
+    <script src="index.js"></script>
+  </body>
+</html>

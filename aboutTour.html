@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--Slick-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Just Travelous</title>
+  </head>
+  <body class="about_tour_body">
+
+    <header class="about_tour_header">
+      <nav class="nav">
+        <div class="container wrapper">
+          <div class="logo">
+            <a href="index.html">Just Travelous</a>
+          </div>
+          <ul class="nav-list">
+            <div class="top">
+              <label for="" class="btn close-btn"><i class="fas fa-times"></i></label>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a class="desktop-item">Packages</a>
+              <input type="checkbox" id="show-drop-menu-1">
+              <label for="show-drop-menu-1" class="mobile-item">Packages<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-1">
+                <li><a href="#">Search</a></li>
+                <li><a href="allTourPackages.html">All Tour Packages</a></li>
+                <li><a href="allDestinations.html">All Destinations</a></li>
+              </ul>
+            </li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li>
+              <a class="desktop-item">News</a>
+              <input type="checkbox" id="show-drop-menu-2">
+              <label for="show-drop-menu-2" class="mobile-item">News<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-2">
+                <li><a href="#">Archive</a></li>
+                <li><a href="#">Recent Activity</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="desktop-item">Contact</a>
+              <input type="checkbox" id="show-drop-menu-3">
+              <label for="show-drop-menu-3" class="mobile-item">Contacts<span><i class="fas fa-chevron-down"></i></span></label>
+              <ul class="drop-menu" id="drop-menu-3">
+                <li><a href="contactUs.html">Contact 1</a></li>
+              </ul>
+            </li>
+            <li class="book-btn"><a href="#">Book Now</a></li>
+          </ul>
+          <label for="" class="btn open-btn"><i class="fa fa-bars"></i></label>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section about_tour_hero">
+      <img src="images/aboutTourHero.jpeg" alt="">
+      <div class="tour_hero_content">
+        <h2>Maldives</h2>
+        <div class="hero_bottom">
+          <div>
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            OCEANIA
+          </div>
+          <div>
+            <span><i class="fas fa-clock"></i></span>
+            9 - 12 Days
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tour_summary container">
+      <div class="tour_summary_layout">
+        <div class="summary_item">
+          <div class="summary_img">
+            <span><i class="fas fa-running"></i></span>
+          </div>
+          <div class="summary_content">
+            <h3>TYPOLOGIES</h3>
+            <div>Sport
+              <div class="summary_dropdown">+2
+                <ul class="summary_dropdown_content">
+                  <li>Relax</li>
+                  <li>Culture</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary_item">
+          <div class="summary_img">
+            <span><i class="fas fa-bolt"></i></span>
+          </div>
+          <div class="summary_content">
+            <h3>DIFFICULTY</h3>
+            <div>High</div>
+          </div>
+        </div>
+        <div class="summary_item">
+          <div class="summary_img">
+            <span><i class="fas fa-male"></i></span>
+          </div>
+          <div class="summary_content">
+            <h3>MIN. AGE</h3>
+            <div>10 Years</div>
+          </div>
+        </div>
+        <div class="summary_item price_item">
+          <h2 class="price">$400</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tour_carousel">
+      <div class="tour_carousel_slider container">
+        <div class="tour_carousel_img">
+          <img src="images/tour_carousel1.jpg" alt="">
+          <div class="tour_carousel_imgContent">
+            <h2>Amazing Tour</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+          </div>
+        </div>
+        <div class="tour_carousel_img">
+          <img src="images/tour_carousel2.jpg" alt="">
+          <div class="tour_carousel_imgContent">
+            <h2>Amazing Tour</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+          </div>
+        </div>
+        <div class="tour_carousel_img">
+          <img src="images/tour_carousel3.jpg" alt="">
+          <div class="tour_carousel_imgContent">
+            <h2>Amazing Tour</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+          </div>
+        </div>
+      </div>
+      <div class="prev_btn" id="aboutTour_slider_prev">
+        <span><i class="fas fa-arrow-circle-left"></i></span>
+      </div>
+      <div class="next_btn" id="aboutTour_slider_next">
+        <span><i class="fas fa-arrow-circle-right"></i></span>
+      </div>
+    </section>
+
+    <section class="section tour_experience container">
+      <h2 class="title">Amazing Experience</h2>
+      <div class="tour_experience_layout">
+        <div class="tour_experience_content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut venenatis lorem.
+            Nunc sodales interdum rhoncus. Nulla a leo finibus, ullamcorper lorem vel, scelerisque massa.
+            Vivamus leo dui, interdum non fermentum eget, laoreet ac lorem. Aliquam a ultricies nisl.
+            Nulla consequat lobortis urna sed cursus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut venenatis lorem.
+            Nunc sodales interdum rhoncus. Nulla a leo finibus, ullamcorper lorem vel, scelerisque massa.
+            Vivamus leo dui, interdum non fermentum eget, laoreet ac lorem. Aliquam a ultricies nisl.
+            Nulla consequat lobortis urna sed cursus.</p>
+        </div>
+        <div class="tour_services">
+          <div class="service_item">
+            <h4>Entrance to the museums</h4>
+            <ul>
+              <li>50% discount on all admissions</li>
+            </ul>
+          </div>
+          <div class="service_item">
+            <h4>Travel with children and pets</h4>
+            <ul>
+              <li>Possibility to rent the stroller</li>
+            </ul>
+          </div>
+          <div class="service_item">
+            <h4>Travel by bus, car and minivan</h4>
+            <ul>
+              <li>Air conditioning guaranteed</li>
+            </ul>
+          </div>
+          <div class="service_item">
+            <h4>Package specifications</h4>
+            <ul class="specifications">
+              <li>Travel cancellation insurance</li>
+              <li>Breakfast and dinner included</li>
+              <li>Health care included</li>
+            </ul>
+          </div>
+          <div class="service_item">
+            <h4>Services NOT included</h4>
+            <ul class="no_specifications">
+              <li>Lunch not included in the package</li>
+              <li>Baggage protection insurance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tour_gallery container">
+      <h2 class="title">Gallery</h2>
+      <div class="tour_gallery_layout">
+        <div class="gallery_img">
+          <img src="images/tourGallery1.jpg" alt="">
+        </div>
+        <div class="gallery_img">
+          <img src="images/tourGallery2.jpg" alt="">
+        </div>
+        <div class="gallery_img">
+          <img src="images/tourGallery3.jpg" alt="">
+        </div>
+        <div class="gallery_img">
+          <img src="images/tourGallery4.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section day_by_day container">
+      <h2 class="title">Day by Day</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut
+        venenatis lorem. Nunc sodales interdum rhoncus. Nulla a leo finibus, ullamcorper
+        lorem vel, scelerisque massa. Vivamus leo dui, interdum non fermentum eget, laoreet
+        ac lorem. Aliquam a ultricies nisl. Nulla consequat lobortis urna sed cursus. ipsum
+        dolor sit amet, consectetur adipiscing elit consectef lorem vel, scelerisque massa.
+        Vivamus leo dui, interdum non.
+      </p>
+      <div class="dayByDay_layout">
+        <div class="dayByDay_item">
+          <span class="dayByDay_chkbox"><i class="fas fa-plus-square"></i></span>
+          <span class="dayByDay_minusbox"><i class="fas fa-minus-square"></i></span>
+          <div class="dayByDay_content">
+            <h4>DAY 1</h4>
+            <span> - Departure at the airport and arrival at the hotel</span>
+          </div>
+          <div class="dayByDay_item_bottom">
+            <span>Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis.</span>
+          </div>
+        </div>
+        <div class="dayByDay_item">
+          <span class="dayByDay_chkbox"><i class="fas fa-plus-square"></i></span>
+          <span class="dayByDay_minusbox"><i class="fas fa-minus-square"></i></span>
+          <div class="dayByDay_content">
+            <h4>DAY 2</h4>
+            <span> - Visit the main museums and lunch included</span>
+          </div>
+          <div class="dayByDay_item_bottom">
+            <span>Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis.</span>
+          </div>
+        </div>
+        <div class="dayByDay_item">
+          <span class="dayByDay_chkbox"><i class="fas fa-plus-square"></i></span>
+          <span class="dayByDay_minusbox"><i class="fas fa-minus-square"></i></span>
+          <div class="dayByDay_content">
+            <h4>DAY 3</h4>
+            <span> - Excursion in the natural oasis and picnic</span>
+          </div>
+          <div class="dayByDay_item_bottom">
+            <span>Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis.</span>
+          </div>
+        </div>
+        <div class="dayByDay_item">
+          <span class="dayByDay_chkbox"><i class="fas fa-plus-square"></i></span>
+          <span class="dayByDay_minusbox"><i class="fas fa-minus-square"></i></span>
+          <div class="dayByDay_content">
+            <h4>DAY 4</h4>
+            <span> - Transfer to the airport and return to the agency</span>
+          </div>
+          <div class="dayByDay_item_bottom">
+            <span>Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis.</span>
+          </div>
+        </div>
+        <div class="dayByDay_item">
+          <span class="dayByDay_chkbox"><i class="fas fa-plus-square"></i></span>
+          <span class="dayByDay_minusbox"><i class="fas fa-minus-square"></i></span>
+          <div class="dayByDay_content">
+            <h4>DAY 5</h4>
+            <span> - Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+          </div>
+          <div class="dayByDay_item_bottom">
+            <span>Lorem commodo lectus at sollicitudin elementum. Sed dolor turpis, condimentum sit amet maximus sit amet, rhoncus non turpis.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section packages container">
+      <div>
+        <h2 class="title">Related Packages</h2>
+      </div>
+      <div class="packages_layout">
+        <div class="package_card">
+          <img src="images/place1.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place2.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place3.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place4.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place5.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="package_card">
+          <img src="images/place1.jpg" alt="">
+          <div class="package_card_content">
+            <div class="place_rating">
+              <i class="fas fa-star"></i>
+              <span>4.8</span>
+            </div>
+            <div class="place_data">
+              <h3 class="place_title">Bali</h3>
+              <span class="place_subtitle">Indonesia</span>
+              <span class="place_price">$2499</span>
+            </div>
+          </div>
+          <a href="aboutTour.html" class="place_button">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="section footer">
+      <div class="footer_layout container">
+        <div class="footer_content">
+          <div class="footer_data">
+            <h3 class="footer_title">Travel</h3>
+            <p class="footer_desc">Travel you choose the <br>destination, we offer you the <br>experience.</p>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">About</h3>
+            <ul>
+              <li class="footer_link"><a href="#">About Us</a></li>
+              <li class="footer_link"><a href="#">Features</a></li>
+              <li class="footer_link"><a href="#">News & Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">Company</h3>
+            <ul>
+              <li class="footer_link"><a href="#">Team</a></li>
+              <li class="footer_link"><a href="#">Plan & Pricing</a></li>
+              <li class="footer_link"><a href="#">Become a member</a></li>
+            </ul>
+          </div>
+          <div class="footer_data">
+            <h3 class="footer_subtitle">Support</h3>
+            <ul>
+              <li class="footer_link"><a href="#">FAQs</a></li>
+              <li class="footer_link"><a href="#">Support Center</a></li>
+              <li class="footer_link"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom JS -->
+    <script src="index.js"></script>
+  </body>
+</html>
